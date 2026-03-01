@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cxplayer001"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a"]
+size = Vector2(70, 30)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_a")
+
+[node name="Visual" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-35, -15, 35, -15, 35, 15, -35, 15)
+color = Color(0.2, 0.6, 1, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_a")

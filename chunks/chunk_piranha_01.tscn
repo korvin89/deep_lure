@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cxchunkpir01"]
+
+[ext_resource type="Script" path="res://scripts/chunk_base.gd" id="1_a"]
+[ext_resource type="PackedScene" uid="uid://cxpiranha01" path="res://scenes/piranha.tscn" id="2_a"]
+
+[node name="ChunkPiranha01" type="Node2D"]
+script = ExtResource("1_a")
+height = 200.0
+
+[node name="Piranha" parent="." instance=ExtResource("2_a")]
+position = Vector2(540, 100)

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cxchunkrock02"]
+
+[ext_resource type="Script" path="res://scripts/chunk_base.gd" id="1_a"]
+
+[sub_resource type="RectangleShape2D" id="RectShape_rock"]
+size = Vector2(600, 100)
+
+[node name="ChunkRock02" type="Node2D"]
+script = ExtResource("1_a")
+
+[node name="Rock" type="StaticBody2D" parent="." groups=["lethal"]]
+position = Vector2(780, 200)
+
+[node name="Visual" type="Polygon2D" parent="Rock"]
+polygon = PackedVector2Array(-300, -50, 300, -50, 300, 50, -300, 50)
+color = Color(0.35, 0.30, 0.25, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rock"]
+shape = SubResource("RectShape_rock")

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cf3t3aellxulg"]
+
+[ext_resource type="Script" path="res://scripts/chunk_base.gd" id="1_a"]
+[ext_resource type="PackedScene" uid="uid://cxjelly01" path="res://scenes/jellyfish.tscn" id="2_a"]
+
+[node name="ChunkJellyfish01" type="Node2D"]
+script = ExtResource("1_a")
+height = 200.0
+
+[node name="Jellyfish" parent="." instance=ExtResource("2_a")]
+position = Vector2(540, 100)
